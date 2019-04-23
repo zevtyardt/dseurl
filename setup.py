@@ -8,7 +8,7 @@ from distutils.core import setup
 
 setup (name = "dseurl",
        version = "0.3",
-       license = "GPL",
+       license = "MIT",
        description = "dork, search engine, parse",
        long_description = DESCRIPTION,
        author = "zvtyrdt.id",
