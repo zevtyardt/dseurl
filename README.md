@@ -19,4 +19,5 @@ $ cd dseurl
 $ pip2 install .
 ```
 
-## usage
+## helper
+![Screenshot](.images/dseurl-help.png)
