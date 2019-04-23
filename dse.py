@@ -68,9 +68,14 @@ def get_url(items):
                 proxies=proxy)
         except Exception as e:
             logging.info('[CRITICAL] %s:%s: %s', name, num, e)
+            if arg.print_:
+                logging.info('-' * 25)
             return
         if re.search(r'(?:re)?chaptcha(?:.min.js)?', r.text):
             logging.info('[CAPTCHA] %s:%s: our system has detected it as a bot', name, num)
+            if arg.print_:
+                logging.info('-' * 25)
+
         else:
             urls = [_[1] for _ in re.findall(r'<a.*?href=(?P<quote>["\'])(.*?)(?P=quote)', r.text)]
             for url in urls:
