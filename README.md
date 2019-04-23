@@ -30,4 +30,4 @@ $ dseurl zvtyrdt.id
 ## help
 ![Screenshot](.images/dseurl-help.png)
 
-*dseurl is under the [MIT](LICENSE) license*
+LICENSE: *dseurl is under the [MIT](LICENSE) license*
