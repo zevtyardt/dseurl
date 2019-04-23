@@ -43,6 +43,7 @@ ENGINE = {
 
 BLACKLIST = [
     'twitter.com', 'microsoft.com', 'facebook.com', 'fb.com', 'instagram.com' # netloc
+    'y.img.+\/',
     ] # XXX: You can add regex pattern to the list or only netloc from the url
 BLACKLIST += [_[0] for _ in ENGINE.items()]
 
@@ -198,7 +199,7 @@ def main():
         if rev:
             if not arg.print_:
                 logging.info('-' * 25)
-            sys.exit('[FINISH] got %s urls from %s search engine(s), saved on \'%s/urls.txt\'\n' % (len(rev), engine_, arg.dir))
+            sys.exit('[FINISH] got %s url(s) from %s search engine(s), saved on \'%s/urls.txt\'\n' % (len(rev), engine_, arg.dir))
         else:
             sys.exit('[FINISH] skipped, no url found\n')
     except KeyboardInterrupt:
