@@ -170,6 +170,7 @@ def print_list():
 
 def main():
     global arg, path, ENGINE, BLACKLIST, rev
+
     print_banner()
     arg = _ArgumentParser()
     if arg.list:
