@@ -12,7 +12,7 @@ or you can use the "--list" option to print on the terminal screen
 * git `apt-get install git`
 * python2 `apt-get install python2`
 
-## install
+## install ![Linux](https://www.linux.org)
 ```zsh
 $ git clone https://github.com/zevtyardt/dseurl
 $ cd dseurl
