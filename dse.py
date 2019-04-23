@@ -106,7 +106,7 @@ def _ArgumentParser():
     parser.add_argument('-u', metavar='AGENT', dest='useragent', help='specify a custom user agent', default='Mozilla/5.0 (X11; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0')
     parser.add_argument('-i', metavar='TIME', dest='timeout', help="time before giving up, in seconds (default 15)", default=15, type=int)
     parser.add_argument('-x', metavar='PROXY', dest='proxy', help="Use the specified HTTP/HTTPS proxy.")
-    parser.add_argument('-d', metavar='DIR', dest='dir', help='output directory (default $HOME/dse)', default=os.path.join(os.environ['HOME'], 'dse'))
+    parser.add_argument('-d', metavar='DIR', dest='dir', help='output directory (default $HOME/dseurl)', default=os.path.join(os.environ['HOME'], 'dseurl'))
     parser.add_argument('-f', metavar='file', dest='file', help='output filename (default urls.txt)', default='urls.txt')
     parser.add_argument('-b', metavar='BLACKLIST', action='append', dest='blacklist', help='add regex pattern to the blacklist\nor only netloc from the url')
     parser.add_argument('-q', '--print', action='store_true', dest='print_', help='print url on terminal screen')
