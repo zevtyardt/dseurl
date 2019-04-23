@@ -24,7 +24,10 @@ example:
 ```zsh
 $ dseurl zvtyrdt.id
 ```
-<br>
 ![Screenshot](.images/dseurl-main.png)
+<br>the result will be stored in the file `$HOME/dseurl/urls.txt`<br>
 
+## help
 ![Screenshot](.images/dseurl-help.png)
+
+*dseurl is under the [MIT](LICENSE) license*
